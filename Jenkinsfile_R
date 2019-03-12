@@ -1,0 +1,11 @@
+Pipeline{
+Pipeline{
+Agent any 
+	Stage{
+		Stage('Build and Package'){
+			step{
+				powershell label: '', script: '''mvn clean package'''
+				}
+			}
+		}
+}		
